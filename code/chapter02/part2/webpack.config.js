@@ -16,9 +16,10 @@ module.exports = {
         filename: "bundle.js",
 
         // 告诉webpack不使用箭头函数
-        // environment: {
-        //     arrowFunction: false
-        // }
+        environment: {
+            arrowFunction: false,
+            const: false
+        }
     },
 
     // 指定webpack打包时要使用的模块
